@@ -1,0 +1,148 @@
+*{
+        box-sizing: border-box;
+    }
+    .container{
+
+        margin: 30px auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    .container,.month,.nav,.return{
+        width: 50%;
+    }
+    .container >div{
+        border: 1px solid #ccc;
+        width: calc(100% / 7);
+        height: calc(40vh / 7);
+        margin-left: -1px;
+        margin-top: -1px;
+        text-align: end;
+        padding-top: 5px;
+        padding-right: 5px;
+        font-size: 16px;
+        font-family:"微軟正黑體";
+        color:darkgray;
+        
+    }
+    .container >div:hover{
+        border:2.5px solid pink;
+    }
+
+    
+    .container >div:nth-child(1),
+    .container >div:nth-child(7),
+    .container >div:nth-child(8),
+    .container >div:nth-child(14),
+    .container >div:nth-child(15),
+    .container >div:nth-child(21),
+    .container >div:nth-child(22),
+    .container >div:nth-child(28),
+    .container >div:nth-child(29),
+    .container >div:nth-child(35),
+    .container >div:nth-child(36),
+    .container >div:nth-child(42),
+    .container >div:nth-child(43),
+    .container >div:nth-child(49)
+    {
+        background-color: lightpink;
+        color: aliceblue;
+        
+        backdrop-filter: blur(3px) ;
+
+    }
+    .container >.today{
+        font-size: 23px;
+       
+        /* text-align:center; */
+      
+        color: pink;
+       
+        
+       
+         
+        
+
+    }
+    .container >.today::before{
+        content: '○' ;
+        text-align: center;
+    }
+    .month{
+        
+        /* background-color: #ccc; */
+        text-align:end;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #ccc;
+        margin: 10px auto;
+        /* border: 1px solid #ccc; */
+        /* border-radius: 10%; */
+        border-left: 20vw solid #ccc ;
+        padding-right: 10px;
+        letter-spacing: 2px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-right: 10px;
+        
+    }
+    .nav a:hover  {
+        /* border-top:1px solid pink ; */
+        border-bottom: 1px solid pink;
+        
+    }
+    .return>a:hover{
+        border-top:1px solid pink ;
+        
+       
+    }
+    
+    
+
+       
+        
+     
+
+   
+    .next > a, .prev > a{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: #ccc;
+        width:50%;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+    }
+    .return{
+        
+        /* background-color: #ccc; */
+        text-align:start;
+        
+        margin: 10px auto;
+        /* border: 1px solid #ccc; */
+        /* border-radius: 10%; */
+        border-right: 30vw solid #ccc ;
+        /* padding-right: 10px; */
+    }
+    .return>a{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ccc;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 15px;
+        /* font-weight:bolder; */
+
+    }
+   
+        
+        
+        
+        
+      
+
+  
