@@ -27,7 +27,10 @@
         
     }
     .container >div:hover{
-        border:2.5px solid pink;
+        
+        outline: 1px solid pink;
+        outline-offset: -2.5px; 
+        opacity: 0.9;
     }
 
     
