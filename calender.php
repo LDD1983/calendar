@@ -186,7 +186,9 @@ echo "<pre>"; */
     
 
 
-
+<div class="pic4">
+        <img src="./img/bc4.png" alt="">
+    </div>
 
   <h1 class="month"><?=$year?>-<?=$month_1?></h1>
   
