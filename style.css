@@ -2,19 +2,79 @@
         box-sizing: border-box;
     }
     .container{
+        width: 100%;
 
+       
+        display: flex;
+        /* flex-wrap: wrap; */
+        
+        
+    }
+    .concalen{
         margin: 30px auto;
         display: flex;
         flex-wrap: wrap;
-        
-        
+       
+
+
     }
-    .container,.month,.nav,.return{
+    .pic{
+        width: 0;
+       
+    }
+    .pic2{
+       
+       
+        width: 0;
+    }
+    .pic3{
+        margin: 0 auto;
+       
+        width: 0 ;
+       
+    }
+
+    .pic3>img{
+        width: 250px;
+        position: fixed;
+       bottom: -0;
+       right: 1000;
+    }
+    .pic2>img{
+        width: 50px;
+        position: fixed;
+        right: 0 ;
+        bottom: 300;
+    }
+
+    
+    .pic>img{
+        width: 100px;
+        position: relative;
+        left: -20 ;
+    }
+    .pic>img:hover{
+        left: -58 ;
+        top: 10;
+
+    }
+    .pic2>img:hover{
+       right: -22;
+       bottom: 305;
+
+    }
+    .pic3>img:hover{
+        bottom: -80;
+        right: 1050;
+       
+
+    }
+    .concalen,.month,.nav,.return{
         width: 50%;
     }
-    .container >div{
-        border: 1px solid #ccc;
-        width: calc(100% / 7);
+    .concalen >div{
+        border: 1px solid #cccccce8;
+        width: calc(100%/ 7);
         height: calc(40vh / 7);
         margin-left: -1px;
         margin-top: -1px;
@@ -22,11 +82,12 @@
         padding-top: 5px;
         padding-right: 5px;
         font-size: 16px;
-        font-family:"蘋果繁中體";
+        font-family:"蘋果繁中";
         color:darkgray;
+        font-weight: 100;
         
     }
-    .container >div:hover{
+    .concalen >div:hover{
         
         outline: 1px solid pink;
         outline-offset: -2.5px; 
@@ -34,20 +95,20 @@
     }
 
     
-    .container >div:nth-child(1),
-    .container >div:nth-child(7),
-    .container >div:nth-child(8),
-    .container >div:nth-child(14),
-    .container >div:nth-child(15),
-    .container >div:nth-child(21),
-    .container >div:nth-child(22),
-    .container >div:nth-child(28),
-    .container >div:nth-child(29),
-    .container >div:nth-child(35),
-    .container >div:nth-child(36),
-    .container >div:nth-child(42),
-    .container >div:nth-child(43),
-    .container >div:nth-child(49)
+    .concalen >div:nth-child(1),
+    .concalen >div:nth-child(7),
+    .concalen >div:nth-child(8),
+    .concalen >div:nth-child(14),
+    .concalen >div:nth-child(15),
+    .concalen >div:nth-child(21),
+    .concalen >div:nth-child(22),
+    .concalen >div:nth-child(28),
+    .concalen >div:nth-child(29),
+    .concalen >div:nth-child(35),
+    .concalen >div:nth-child(36),
+    .concalen >div:nth-child(42),
+    .concalen >div:nth-child(43),
+    .concalen >div:nth-child(49)
     {
         background-color: lightpink;
         color: aliceblue;
@@ -55,7 +116,7 @@
         backdrop-filter: blur(3px) ;
 
     }
-    .container >.today{
+    .concalen >.today{
         font-size: 23px;
        
         /* text-align:center; */
@@ -66,12 +127,13 @@
         /* box-shadow: 0 0 0 2px #88b8ff; */
        
         position: relative;
+        
        
          
         
 
     }
-    .container >.today::before{
+    .concalen >.today::before{
         content: ' Today ';
         /* text-align:start; */
         /* text-transform: uppercase; */

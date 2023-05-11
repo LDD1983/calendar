@@ -189,6 +189,8 @@ echo "<pre>"; */
 
 
   <h1 class="month"><?=$year?>-<?=$month_1?></h1>
+  
+
   <div class="nav">      
       <div class="prev">
           <a href="calender.php?year=<?=$prevyear;?>&month=<?=$prevmonth;?>">
@@ -208,6 +210,10 @@ echo "<pre>"; */
 
     
 <div class="container">
+    <div class="pic">
+        <img src="./img/bc.png" alt="">
+    </div>
+    <div class="concalen">
 
 <?php
 $weekday=["日", "一", "二", "三", "四", "五", "六"];
@@ -231,11 +237,19 @@ for($i=0;$i<count($days);$i++){
     
 }
 ?>
+       </div>
+       <div class="pic2">
+        <img src="./img/bc2.png" alt="">
+    </div>
    
    </div>
 <div class="return">
     <a href="?year=<?=date("Y");?>&month=<?=date("n");?>">home</a>
 </div>
+<div class="pic3">
+        <img src="./img/bc3jpg.jpg" alt="">
+    </div>
+
 
 
 
