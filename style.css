@@ -224,13 +224,15 @@
 
 .next>a,
 .prev>a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:system-ui;
+;
     color: #ccc;
     width: 50%;
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
+    /* font-weight: 100; */
 
 }
 
@@ -247,12 +249,12 @@
 }
 
 .return>a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: system-ui;
     color: #ccc;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 15px;
-    /* font-weight:bolder; */
+    /* font-weight:100; */
 
 }

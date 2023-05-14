@@ -195,12 +195,12 @@ echo "<pre>"; */
 
   <div class="nav">      
       <div class="prev">
-          <a href="calender.php?year=<?=$prevyear;?>&month=<?=$prevmonth;?>">
+          <a href="index.php?year=<?=$prevyear;?>&month=<?=$prevmonth;?>">
           prev
         </a>
       </div>
       <div class="next">   
-         <a href="calender.php?year=<?=$nextyear;?>&month=<?=$nextmonth;?>">
+         <a href="index.php?year=<?=$nextyear;?>&month=<?=$nextmonth;?>">
             next
         </a>
       </div>
